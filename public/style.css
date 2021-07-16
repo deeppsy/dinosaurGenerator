@@ -1,0 +1,78 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: hsl(0, 0%, 6%);
+  font-family: Arial, Helvetica, sans-serif;
+  background: center/cover
+    url("https://images.unsplash.com/photo-1566409905713-2958e83e4399?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+}
+
+.generator {
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  font-family: "Sigmar One", cursive;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+img#dinoImage {
+  max-width: 100%;
+  border-radius: 0 0 1rem 1rem;
+}
+
+button#btnLoad {
+  background: hsl(0, 100%, 58%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  transition: background 150ms ease-in-out;
+}
+
+button#btnLoad:hover {
+  cursor: pointer;
+  background: hsl(0, 72%, 34%);
+}
+
+#dinoName {
+  background: hsl(204, 48%, 74%);
+  margin-bottom: 0;
+  border-radius: 1rem 1rem 0 0;
+  padding: 0.25rem;
+  font-family: "Indie Flower", cursive;
+  color: hsl(0, 61%, 18%);
+  font-weight: bold;
+}
+#dinoWrapper {
+  width: 80%;
+  max-width: 25rem;
+  margin: auto;
+}
+@media (min-width: 37.5em) {
+  h1 {
+    font-size: 3rem;
+  }
+  #dinoWrapper {
+    width: 50%;
+    max-width: 25rem;
+    margin: auto;
+  }
+}
